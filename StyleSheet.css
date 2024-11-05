@@ -19,6 +19,17 @@ body {
     gap: 2fr; /* Optional gap to space elements */
 }
 
+/* Add this to your StyleSheet.css */
+
+.container img {
+    transition: transform 0.3s ease; /* Smooth transition for the transformation */
+}
+
+.container img:hover {
+    transform: scale(1.05); /* Enlarge the image by 10% on hover */
+}
+
+
 /* Profile Image Position */
 .profile {
     grid-column: 3 / 32; /* 0% to 31% */
@@ -72,7 +83,7 @@ body {
 /* Experience Image Position */
 .experience {
     grid-column: 3 / 33; /* Adjust based on the desired position */
-    grid-row: 32 / 88; /* Adjust based on the desired position */
+    grid-row: 32 / 90; /* Adjust based on the desired position */
 }
 .experience img {
     width: 100%;
@@ -94,7 +105,7 @@ body {
 /* Skills Image Position */
 .skills {
     grid-column: 30 / 94; /* Adjust based on the desired position */
-    grid-row: 48 / 90; /* Adjust based on the desired position */
+    grid-row: 53 / 90; /* Adjust based on the desired position */
     z-index: 1 ;
 }
 .skills img {
