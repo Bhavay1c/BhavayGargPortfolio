@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #040404;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(95, 1fr);
+    grid-template-rows: repeat(95, 1fr);
+    width: 100vw;
+    height: 100vh;
+    max-width: 1600px;
+    max-height: 800px;
+    gap: 2fr; /* Optional gap to space elements */
+}
+
+/* Profile Image Position */
+.profile {
+    grid-column: 3 / 32; /* 0% to 31% */
+    grid-row: 3 / 31; /* 0% to 30% */
+}
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Introduction Image Position */
+.introduction {
+    grid-column: 32 / 75; /* 31% to 74% */
+    grid-row: 3 / 17; /* 30% to 46% */
+}
+.introduction img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Connect Section */
+.connect {
+    grid-column: 75 / 94; /* Adjust based on the desired position */
+    grid-row: 3 / 17; /* Adjust based on the desired position */
+}
+.connect-inner {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 5px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.connect-main {
+    width: 100%;
+    height: auto;
+}
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.icon {
+    width: 50%; 
+    height: 50%; 
+    object-fit: contain;
+}
+
+/* Experience Image Position */
+.experience {
+    grid-column: 3 / 33; /* Adjust based on the desired position */
+    grid-row: 32 / 88; /* Adjust based on the desired position */
+}
+.experience img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Projects Image Position */
+.projects {
+    grid-column: 34 / 94; /* Adjust based on the desired position */
+    grid-row: 18 / 51; /* Adjust based on the desired position */
+}
+.projects img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Skills Image Position */
+.skills {
+    grid-column: 34 / 94; /* Adjust based on the desired position */
+    grid-row: 52 / 90; /* Adjust based on the desired position */
+}
+.skills img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
