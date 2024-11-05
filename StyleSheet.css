@@ -93,8 +93,9 @@ body {
 
 /* Skills Image Position */
 .skills {
-    grid-column: 34 / 94; /* Adjust based on the desired position */
-    grid-row: 52 / 90; /* Adjust based on the desired position */
+    grid-column: 30 / 94; /* Adjust based on the desired position */
+    grid-row: 48 / 90; /* Adjust based on the desired position */
+    z-index: 1 ;
 }
 .skills img {
     width: 100%;
